@@ -40,9 +40,12 @@ Pour assurer le développement et l'exécution de l'application Web QCM, l'envir
 
 Voici les commandes d'installation et de configuration de la pile sur une machine Ubuntu / WSL vierge :
 
+
 ### 2.1. Mise à jour du système
+
 ```bash
 sudo apt update && sudo apt upgrade -y
+
 
 2.2. Installation d'Apache, MariaDB, PHP et Doxygen
 
@@ -56,6 +59,7 @@ sudo systemctl restart apache2
 
 
 3. Workflow GitFlow et branches du projet
+
 Le suivi de version respecte la logique du framework GitFlow :
 
 main : Branche réservée aux versions stables et validées (prêtes pour la production, marquées par des tags de version).
