@@ -47,6 +47,3 @@ L'ensemble des étapes (*Milestones*) et des tâches (*Issues*) sont saisies et 
 
 ### 3.1. Suivi des jalons (Milestones)
 ![Capture des Milestones GitHub](images/github_milestones.png)
-
-### 3.2. Tableau de suivi des tâches (Kanban / Projects)
-![Suivi de projet GitHub Projects](gantt.png)
