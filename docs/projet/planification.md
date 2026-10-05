@@ -28,9 +28,9 @@ Le projet consiste à développer une plateforme de gestion et de passage de QCM
 | ID | Phase / Tâche | Responsable | Date début | Date fin | Statut |
 |---|---|---|---|---|---|
 | **P1** | **Phase 1 : Planification & Environnement** | Groupe | 28/09/2026 | 12/10/2026 | En cours |
-| T1.1 | Rédaction du document de planification | Esadselim | 05/10/2026 | 12/10/2026 | En cours |
-| T1.2 | Rédaction de la documentation d'installation | Raphaël | 05/10/2026 | 12/10/2026 | À faire |
-| T1.3 | Saisie des Milestones/Issues dans GitHub Projects | Mattéo | 05/10/2026 | 12/10/2026 | À faire |
+| T1.1 | Rédaction du document de planification | Esadselim | 05/10/2026 | 12/10/2026 | Terminé |
+| T1.2 | Rédaction de la documentation d'installation | Raphaël | 05/10/2026 | 12/10/2026 | En cours |
+| T1.3 | Saisie des Milestones/Issues dans GitHub Projects | Mattéo | 05/10/2026 | 12/10/2026 | Terminé |
 | **P2** | **Phase 2 : Conception (UML & BDD)** | Groupe | 13/10/2026 | 16/11/2026 | À faire |
 | T2.1 | Réalisation du schéma E/A et Modèle Relationnel | Groupe | 13/10/2026 | 25/10/2026 | À faire |
 | T2.2 | Maquettes et diagrammes de cas d'utilisation | Groupe | 26/10/2026 | 16/11/2026 | À faire |
@@ -45,4 +45,4 @@ Le projet consiste à développer une plateforme de gestion et de passage de QCM
 
 L'ensemble des étapes (*Milestones*) et des tâches (*Issues*) sont saisies et suivies sur l'outil de gestion de projet de GitHub.
 
-*(Insérer ici une capture d'écran du tableau GitHub Projects dès la saisie faite par Mattéo)*
+![Suivi de projet GitHub Projects](gantt.png)
