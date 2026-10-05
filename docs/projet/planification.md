@@ -41,6 +41,38 @@ Le projet consiste à développer une plateforme de gestion et de passage de QCM
 | T3.4 | CRUD Questions et création de QCM (Formateur) | Groupe | 16/12/2026 | 25/12/2026 | À faire |
 | T3.5 | Interface de passage de QCM (Étudiant) | Groupe | 26/12/2026 | 04/01/2027 | À faire |
 
+### 2.1. Diagramme de GANTT
+
+```mermaid
+gantt
+    title Planification du projet QCM
+    dateFormat DD-MM-YYYY
+    axisFormat %d/%m
+
+    section Phase 1 - Planification
+    Planification du projet       :p1, 28-09-2026, 15d
+    Autoformation Git/GitHub      :a1, 05-10-2026, 5d
+    Documentation installation    :a2, 05-10-2026, 8d
+    Milestones et Issues GitHub   :a3, 05-10-2026, 8d
+
+    section Phase 2 - Conception
+    Schéma E/A et modèle relationnel :b1, 13-10-2026, 13d
+    Maquettes et diagrammes UML      :b2, 26-10-2026, 22d
+
+    section Phase 3 - Développement
+    Script SQL et jeu de données      :c1, 17-11-2026, 9d
+    Router et Core MVC                :c2, 26-11-2026, 10d
+    CRUD Matières, Comptes, Classes  :c3, 06-12-2026, 10d
+    CRUD Questions et création QCM   :c4, 16-12-2026, 10d
+    Interface de passage de QCM       :c5, 26-12-2026, 10d
+
+    section Rendus
+    Rendu 1 - Planification           :milestone, r1, 12-10-2026, 0d
+    Rendu 2 - Environnement           :milestone, r2, 12-10-2026, 0d
+    Rendu 3 - Conception              :milestone, r3, 16-11-2026, 0d
+    Rendu 4 - Développement           :milestone, r4, 04-01-2027, 0d
+```
+
 ## 3. Suivi sur GitHub
 
 L'ensemble des étapes (*Milestones*) et des tâches (*Issues*) sont saisies et suivies directement sur le dépôt GitHub.
