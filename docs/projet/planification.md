@@ -46,7 +46,7 @@ Le projet consiste à développer une plateforme de gestion et de passage de QCM
 L'ensemble des étapes (*Milestones*) et des tâches (*Issues*) sont saisies et suivies directement sur le dépôt GitHub.
 
 ### 3.1. Suivi des jalons (Milestones)
-![Capture des Milestones GitHub](github_milestones.png)
+![Capture des Milestones GitHub](images/github_milestones.png)
 
 ### 3.2. Tableau de suivi des tâches (Kanban / Projects)
 ![Suivi de projet GitHub Projects](gantt.png)
