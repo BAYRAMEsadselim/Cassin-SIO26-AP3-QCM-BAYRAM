@@ -4,7 +4,7 @@ author: Esadselim BAYRAM
 creator: Typora inc.
 subject: Documentation technique
 header:
-footer: ${title} - ${author} - Page ${pageNo} / ${totalPages}
+footer: ${title} -${author} - Page ${pageNo} /${totalPages}
 ---
 
 # Documentation de configuration de l'environnement de travail
@@ -41,29 +41,31 @@ Pour assurer le développement et l'exécution de l'application Web QCM, l'envir
 Voici les commandes d'installation et de configuration de la pile sur une machine Ubuntu / WSL vierge :
 
 ### 2.1. Mise à jour du système
+```bash
 sudo apt update && sudo apt upgrade -y
 
-### 2.2. Installation d'Apache, MariaDB, PHP et Doxygen
+2.2. Installation d'Apache, MariaDB, PHP et Doxygen
+
 sudo apt install -y apache2 mariadb-server php libapache2-mod-php php-mysql php-cli php-curl php-gd php-mbstring php-xml php-zip composer git doxygen
 
-### 2.3. Activer le module d'écriture d'URL Apache (mod_rewrite)
+
+2.3. Activer le module d'écriture d'URL Apache (mod_rewrite)
+
 sudo a2enmod rewrite
 sudo systemctl restart apache2
 
----
 
-## 3. Workflow GitFlow et branches du projet
-
+3. Workflow GitFlow et branches du projet
 Le suivi de version respecte la logique du framework GitFlow :
 
-- **main** : Branche réservée aux versions stables et validées (prêtes pour la production, marquées par des tags de version).
-- **develop** : Branche principale d'intégration et de travail centralisée.
-- **feat/<nom-fonctionnalité>** : Branches éphémères pour développer des fonctionnalités spécifiques avant fusion vers develop.
+main : Branche réservée aux versions stables et validées (prêtes pour la production, marquées par des tags de version).
 
----
+develop : Branche principale d'intégration et de travail centralisée.
 
-## 4. Architecture des répertoires et mesures de sécurité
+feat/<nom-fonctionnalité> : Branches éphémères pour développer des fonctionnalités spécifiques avant fusion vers develop.
 
+
+4. Architecture des répertoires et mesures de sécurité
 L'arborescence respecte la structure MVC imposée par le sujet :
 
 Cassin-SIO26-AP3-QCM-BAYRAM/
@@ -84,38 +86,40 @@ Cassin-SIO26-AP3-QCM-BAYRAM/
 ├── uploads/              # Fichiers téléversés hors du répertoire web public
 └── tests/                # Tests unitaires
 
-### Sécurité du répertoire :
-- **Point d'entrée unique** : Seul le répertoire public/ est exposé au serveur Apache. Les dossiers sensibles (app/, config/, docs/) ne sont pas accessibles via l'URL pour empêcher toute fuite de code ou d'identifiants.
-- **Masquage de la configuration** : Les identifiants BDD sont stockés dans le dossier config/ situé en dehors de la racine web public/.
+Sécurité du répertoire :
+Point d'entrée unique : Seul le répertoire public/ est exposé au serveur Apache. Les dossiers sensibles (app/, config/, docs/) ne sont pas accessibles via l'URL pour empêcher toute fuite de code ou d'identifiants.
 
----
+Masquage de la configuration : Les identifiants BDD sont stockés dans le dossier config/ situé en dehors de la racine web public/.
 
-## 5. Procédure de déploiement vers l'environnement de tests
 
+5. Procédure de déploiement vers l'environnement de tests
 Pour déployer une nouvelle version du code sur l'environnement de test :
 
-1. Se placer dans le répertoire du projet :
-   cd /var/www/html/Cassin-SIO26-AP3-QCM-BAYRAM
+Se placer dans le répertoire du projet :
+cd /var/www/html/Cassin-SIO26-AP3-QCM-BAYRAM
 
-2. Récupérer les dernières modifications de la branche develop (ou main pour la production) :
-   git checkout develop
-   git pull origin develop
+Récupérer les dernières modifications de la branche develop (ou main pour la production) :
+git checkout develop
+git pull origin develop
 
-3. Mettre à jour les dépendances si nécessaire :
-   composer install --no-dev --optimize-autoloader
+Mettre à jour les dépendances si nécessaire :
+composer install --no-dev --optimize-autoloader
 
-4. Ajuster les permissions sur les dossiers d'écriture :
-   chmod -R 775 storage uploads
+Ajuster les permissions sur les dossiers d'écriture :
+chmod -R 775 storage uploads
 
----
 
-## 6. Conventions de nommage des commits (Conventional Commits)
-
+6. Conventions de nommage des commits (Conventional Commits)
 Les messages de validation Git doivent obligatoirement respecter la norme Conventional Commits : <type>(<contexte>): <description>
 
-- **feat** : Nouvelle fonctionnalité (ex: feat(login): ajout du formulaire de connexion)
-- **fix** : Correction de bug (ex: fix(router): correction de la redirection 404)
-- **docs** : Documentation uniquement (ex: docs(technique): mise a jour du guide d'installation)
-- **style** : Changement d'affichage, CSS/HTML sans modifier la logique (ex: style(css): modification de la couleur des boutons)
-- **refactor** : Modification du code sans ajout de fonction ni correction (ex: refactor(database): optimisation de la connexion PDO)
-- **chore** : Tâches de configuration ou maintenance (ex: chore(config): ajout du fichier .gitignore)
+feat : Nouvelle fonctionnalité (ex: feat(login): ajout du formulaire de connexion)
+
+fix : Correction de bug (ex: fix(router): correction de la redirection 404)
+
+docs : Documentation uniquement (ex: docs(technique): mise a jour du guide d'installation)
+
+style : Changement d'affichage, CSS/HTML sans modifier la logique (ex: style(css): modification de la couleur des boutons)
+
+refactor : Modification du code sans ajout de fonction ni correction (ex: refactor(database): optimisation de la connexion PDO)
+
+chore : Tâches de configuration ou maintenance (ex: chore(config): ajout du fichier .gitignore)
