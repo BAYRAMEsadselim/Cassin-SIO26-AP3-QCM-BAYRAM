@@ -41,8 +41,12 @@ Le projet consiste à développer une plateforme de gestion et de passage de QCM
 | T3.4 | CRUD Questions et création de QCM (Formateur) | Groupe | 16/12/2026 | 25/12/2026 | À faire |
 | T3.5 | Interface de passage de QCM (Étudiant) | Groupe | 26/12/2026 | 04/01/2027 | À faire |
 
-## 3. Suivi sur GitHub Projects
+## 3. Suivi sur GitHub
 
-L'ensemble des étapes (*Milestones*) et des tâches (*Issues*) sont saisies et suivies sur l'outil de gestion de projet de GitHub.
+L'ensemble des étapes (*Milestones*) et des tâches (*Issues*) sont saisies et suivies directement sur le dépôt GitHub.
 
+### 3.1. Suivi des jalons (Milestones)
+![Capture des Milestones GitHub](github_milestones.png)
+
+### 3.2. Tableau de suivi des tâches (Kanban / Projects)
 ![Suivi de projet GitHub Projects](gantt.png)
