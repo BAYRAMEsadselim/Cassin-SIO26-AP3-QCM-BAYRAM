@@ -1,66 +1,44 @@
+# Conception de l'Application - Plateforme QCM
+
+## 1. Charte Graphique et Maquettes
+
+### 1.1. Identité visuelle
+- **Palette de couleurs** :
+  - **Primary (Principale)** : `#0d6efd` (Bleu institutionnel)
+  - **Secondary (Secondaire)** : `#6c757d` (Gris neutre)
+  - **Accent / Success** : `#198754` (Vert de validation / bonne réponse)
+  - **Danger / Error** : `#dc3545` (Rouge d'erreur / mauvaise réponse)
+  - **Background** : `#f8f9fa` (Fond clair reposant)
+- **Typographie** : `System-ui`, `-apple-system`, `Roboto`, `Segoe UI`, `sans-serif` (Lisibilité optimale).
+- **Framework CSS** : Bootstrap 5 pour garantir une interface moderne et entièrement responsive.
+
+### 1.2. Logique de navigation et maquettes des vues
+
+#### A. Écran de connexion (`/login`)
+- **Structure** : Carte centralisée au milieu de la page.
+- **Éléments** : Logo, champ Email, champ Mot de passe, bouton "Se connecter", message d'erreur d'authentification en rouge si besoin.
+
+#### B. Tableau de bord Étudiant (`/student/dashboard`)
+- **Header** : Nom de l'étudiant, classe actuelle, bouton de déconnexion.
+- **Section QCMs** :
+  - **QCMs en cours** : Carte avec titre, matière, date limite et bouton vert "Démarrer".
+  - **QCMs passés** : Liste des questionnaires terminés avec la note obtenue et un bouton "Voir le détail/correction".
+  - **QCMs futurs** : Liste grise non cliquable affichant la date d'ouverture à venir.
+
+#### C. Interface de passation d'un QCM (`/qcm/play`)
+- **Header fixe** : Titre du QCM, chronomètre / temps restant, barre de progression.
+- **Corps de page** : Énoncé de la question, choix de réponses (boutons radio ou cases à cocher selon le type de question).
+- **Footer** : Boutons "Question précédente", "Question suivante" et "Valider le QCM".
+
 ---
-title: Documentation de conception applicative et modélisation BDD
-author: Esadselim BAYRAM
-creator: Typora inc.
-subject: Documentation technique - Phase 3
-header:
-footer: ${title} -${author} - Page ${pageNo} /${totalPages}
----
 
-# Documentation de conception applicative et modélisation BDD
+## 2. Diagrammes UML (À compléter par l'équipe)
+
+*(Section réservée pour les diagrammes de cas d'utilisation et de séquence)*
 
 ---
 
-**Date de création** : 05/10/2026 - E. BAYRAM  
-**Date de modification** : 05/10/2026 - E. BAYRAM  
-**Sommaire :**
+## 3. Modèle Conceptuel et Relationnel de Données (À compléter par l'équipe)
 
-> [TOC]
+*(Section réservée pour le MCD et le MLD)*
 
-<div style="page-break-after:always"></div>
-
-## 1. Présentation générale
-
-Ce document regroupe l'ensemble des éléments de conception technique et fonctionnelle du projet de plateforme QCM en ligne. Il sert de référence pour le développement de la base de données MariaDB et de l'architecture applicative sous le modèle MVC.
-
----
-
-## 2. Diagramme de cas d'utilisation (Use Cases)
-
-L'application distingue trois rôles principaux : **Administrateur**, **Formateur** et **Étudiant**.
-
-```mermaid
-graph TD
-    subgraph Plateforme QCM
-        %% Cas d'utilisation Administrateur
-        UC_Admin1(Gérer les matières - CRUD)
-        UC_Admin2(Gérer les comptes utilisateurs - CRUD)
-        UC_Admin3(Gérer les classes - CRUD)
-        UC_Admin4(Affecter étudiants et formateurs aux classes)
-        UC_Admin5(Gérer les mots-clés thématiques - CRUD)
-
-        %% Cas d'utilisation Formateur
-        UC_Form1(Gérer la banque de questions - CRUD)
-        UC_Form2(Configurer un QCM)
-        UC_Form3(Associer critères et mots-clés au QCM)
-
-        %% Cas d'utilisation Étudiant
-        UC_Etu1(Consulter la liste des QCM)
-        UC_Etu2(Répondre à un QCM en cours)
-        UC_Etu3(Consulter les résultats et corrections)
-    end
-
-    Admin((Administrateur)) --> UC_Admin1
-    Admin --> UC_Admin2
-    Admin --> UC_Admin3
-    Admin --> UC_Admin4
-    Admin --> UC_Admin5
-    Admin --> UC_Form1
-
-    Formateur((Formateur)) --> UC_Form1
-    Formateur --> UC_Form2
-    Formateur --> UC_Form3
-
-    Etudiant((Étudiant)) --> UC_Etu1
-    Etudiant --> UC_Etu2
-    Etudiant --> UC_Etu3
