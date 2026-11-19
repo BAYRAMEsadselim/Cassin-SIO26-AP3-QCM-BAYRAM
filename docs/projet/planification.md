@@ -62,7 +62,7 @@ Les étapes ci-dessus sont transcrites en **Milestones** GitHub, et chaque ligne
 ### Issues (tickets)
 
 **Rendu 1 - Planifier**
-- [ ] Définir le diagramme de GANTT du projet
+- [x] Définir le diagramme de GANTT du projet
 - [ ] Créer les Milestones dans GitHub
 - [ ] Créer les Issues correspondant aux tâches
 - [ ] Rédiger docs/projet/planification.md
