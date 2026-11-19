@@ -63,15 +63,15 @@ Les étapes ci-dessus sont transcrites en **Milestones** GitHub, et chaque ligne
 
 **Rendu 1 - Planifier**
 - [x] Définir le diagramme de GANTT du projet
-- [ ] Créer les Milestones dans GitHub
-- [ ] Créer les Issues correspondant aux tâches
-- [ ] Rédiger docs/projet/planification.md
+- [x] Créer les Milestones dans GitHub
+- [x] Créer les Issues correspondant aux tâches
+- [x] Rédiger docs/projet/planification.md
 
 **Rendu 2 - Environnement**
-- [ ] Choisir et configurer l'environnement de dev (VM / WSL / Multipass)
-- [ ] Installer Apache, PHP, MariaDB
-- [ ] Configurer l'environnement de tests
-- [ ] Rédiger docs/technique/installations.md
+- [x] Choisir et configurer l'environnement de dev (VM / WSL / Multipass)
+- [x] Installer Apache, PHP, MariaDB
+- [x] Configurer l'environnement de tests
+- [x] Rédiger docs/technique/installations.md
 
 **Rendu 3 - Conception**
 - [ ] Charte graphique + maquettes des écrans
