@@ -6,9 +6,9 @@ Projet réalisé dans le cadre de l'Atelier de professionnalisation 3 (BTS SIO S
 Application web PHP (MVC) permettant aux formateurs de configurer des QCM et d'évaluer leurs étudiants.
 
 ## Équipe
-LE Raphaël
-BAYRAM Esadselim
-MEYER Mattéo
+- LE Raphaël
+- BAYRAM Esadselim
+- MEYER Mattéo
 
 ## Organisation Git
 - `main` : version stable, référence pour l'évaluation
