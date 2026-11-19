@@ -1,0 +1,13 @@
+{
+    "name": "cassin/plateforme-qcm",
+    "description": "Plateforme de QCM en ligne - Atelier de professionnalisation 3",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "php": ">=8.1"
+    }
+}
