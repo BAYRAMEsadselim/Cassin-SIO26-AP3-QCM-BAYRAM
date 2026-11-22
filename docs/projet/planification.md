@@ -92,3 +92,5 @@ Les étapes ci-dessus sont transcrites en **Milestones** GitHub, et chaque ligne
 - [ ] feature/espace-etudiant (liste QCM, réponse, résultats, filtres)
 - [ ] Tests + mise en ligne sur l'environnement de tests
 
+## 3. Capture d'écran des tâches et étapes dans GitHub
+
