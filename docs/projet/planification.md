@@ -94,6 +94,6 @@ Les étapes ci-dessus sont transcrites en **Milestones** GitHub, et chaque ligne
 
 ## 3. Capture d'écran des tâches et étapes dans GitHub
 
-![Milestones et Issues GitHub](./Medias/issue.png)
-![Milestones et Issues GitHub2](./Medias/issue2.png)
-![Milestones et Issues GitHub3](./Medias/issue3.png)
+![Milestones et Issues GitHub](./media/issue.png)
+![Milestones et Issues GitHub2](./media/issue2.png)
+![Milestones et Issues GitHub3](./media/issue3.png)
