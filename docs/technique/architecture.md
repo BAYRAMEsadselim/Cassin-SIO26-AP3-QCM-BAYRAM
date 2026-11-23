@@ -213,7 +213,7 @@ Associations :
 
 `ADMINISTRATEUR` n'est relié à aucune autre entité : ses actions (gestion des comptes/matières/classes/mots-clés) sont des traitements applicatifs (CRUD), pas des données à relier structurellement.
 
-![MCD de la plateforme QCM](./media/McdQCM.pdf)
+![MCD de la plateforme QCM](./media/McdQCM.png)
 
 <div style="page-break-after:always"></div>
 
