@@ -139,7 +139,7 @@ INSERT INTO utilisateur (nom, prenom, email, mot_de_passe, role, classe_id) VALU
 ('SCHOSSIG', 'Frederic', 'admin@cassin.fr', 'a faire', 'administrateur', NULL),
 ('LE', 'Raphaël', 'le.raphael67@gmail.com', 'a faire', 'administrateur', 1),
 ('BAYRAM', 'Esad', 'bayramesadselim@gmail.com', 'a faire', 'administrateur', 2),
-('MEYER', 'Mattéo', 'lyonmatteo@gmail.com', 'a faire', 'administrateur', 3),
+('MEYER', 'Mattéo', 'lyonmatteo@gmail.com', 'a faire', 'administrateur', 3);
 
 INSERT INTO matiere (nom, affectee) VALUES
 ('PHP / Développement web', TRUE),
