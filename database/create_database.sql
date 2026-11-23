@@ -136,12 +136,10 @@ INSERT INTO classe (nom, annee) VALUES
 ('BTS SIO1 SLAM', '2026-2027');
 
 INSERT INTO utilisateur (nom, prenom, email, mot_de_passe, role, classe_id) VALUES
-('Schossig', 'Frederic', 'admin@cassin.fr', '$2y$10$abcdefghijklmnopqrstuv', 'administrateur', NULL),
-('Dupont', 'Jean', 'j.dupont@cassin.fr', '$2y$10$abcdefghijklmnopqrstuv', 'formateur', NULL),
-('Martin', 'Lucie', 'l.martin@cassin.fr', '$2y$10$abcdefghijklmnopqrstuv', 'formateur', NULL),
-('Bayram', 'Esad', 'e.bayram@cassin.fr', '$2y$10$abcdefghijklmnopqrstuv', 'etudiant', 1),
-('Durand', 'Chloe', 'c.durand@cassin.fr', '$2y$10$abcdefghijklmnopqrstuv', 'etudiant', 1),
-('Lefevre', 'Hugo', 'h.lefevre@cassin.fr', '$2y$10$abcdefghijklmnopqrstuv', 'etudiant', 1);
+('SCHOSSIG', 'Frederic', 'admin@cassin.fr', 'a faire', 'administrateur', NULL),
+('LE', 'Raphaël', 'le.raphael67@gmail.com', 'a faire', 'administrateur', 1),
+('BAYRAM', 'Esad', 'bayramesadselim@gmail.com', 'a faire', 'administrateur', 2),
+('MEYER', 'Mattéo', 'lyonmatteo@gmail.com', 'a faire', 'administrateur', 3),
 
 INSERT INTO matiere (nom, affectee) VALUES
 ('PHP / Développement web', TRUE),
