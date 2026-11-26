@@ -1,0 +1,9 @@
+{
+    "name": "plateforme-qcm",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Frontend JavaScript (modules ES natifs, aucune dépendance pour l'instant)",
+    "scripts": {
+        "start": "php -S localhost:8000 -t public"
+    }
+}
