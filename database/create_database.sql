@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS qcm_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE qcm_db;
+
 CREATE TABLE Matieres(
    idMatiere INT AUTO_INCREMENT,
    nomMatiere VARCHAR(50) ,
