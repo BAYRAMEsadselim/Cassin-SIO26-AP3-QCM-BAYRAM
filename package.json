@@ -2,6 +2,6 @@
   "name": "plateforme-qcm",
   "version": "1.0.0",
   "private": true,
-  "scripts": {},
+  "scripts": {"start": "php -S localhost:8000 -t public"},
   "devDependencies": {}
 }
